@@ -129,7 +129,7 @@ nav,
     transition: all 400ms;
 }
 
-.dark-theme .title,
+
 .dark-theme .section__title,
 .dark-theme .section__subtitle,
 .dark-theme .nav__link--anchor,
@@ -206,9 +206,11 @@ nav,
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    box-shadow: 0 12px 30px 0 rgb(0, 0 ,0, 0.3);
 }
 
 .scroll {
@@ -711,6 +713,21 @@ WIDTH = 80 Vw
     .nav__link:first-child {
         display: none;
     }
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--subtitle {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 32px;
+    }
     .shape--3 {
         top: 50vh;
         left: 2vw;
@@ -724,5 +741,14 @@ WIDTH = 80 Vw
     .shape--5 {
         top: 50vh;
         left: 100vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 40px;
+    }
+    .section__title {
+        font-size: 24px;
     }
 }

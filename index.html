@@ -63,7 +63,7 @@
 
       <header>
         <div class="header">
-          <h1 class="title">Hey</h1>
+          <h1 class="title title--secondary text--color">Hey</h1>
           <h1 class="title title--secondary text--color">I'm Quiyo.</h1>
           <p class="header__para">
             Pronounced  <span class="text--color">"KI - YO"</span> <br> I'm a
@@ -92,9 +92,12 @@
           </div>
         </div>
       </header>
+
+      <a href="#">
       <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
-      </button>
+      </button></a>
+
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -298,18 +301,15 @@
             </a>
   
             <a
-              href="mailto:xianvillanueva@outlook.com"
-              target="_blank"
+              href="#" onclick="toggleModal()"
               class="footer__social--link link__hover--effect link__hover--effect--white click"
-              >Email</i>
+              >Contact</i>
             </a>
   
             <a
               href="./assets/resume-trade-qv.pdf"
-              target="_blank"
               class="footer__social--link link__hover--effect link__hover--effect--white"
               target="_blank"
-              download
               >Resume</i>
             </a>
           </div>
