@@ -704,6 +704,7 @@ WIDTH = 80 Vw
         font-size: 40px;
         margin-top: 24px;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -735,23 +736,37 @@ WIDTH = 80 Vw
         top: 50vh;
         left: 2vw;
     }
-    
-    .shape--4 {
-        top: 40vh;
-        left: 60vw;
-    }
-    
     .shape--5 {
         top: 50vh;
         left: 100vw;
     }
+    .shape--1, .shape--7, .shape--4, .shape--0 {
+        visibility: hidden;
+    }
+ 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     .title {
         font-size: 40px;
     }
     .section__title {
         font-size: 24px;
+    }
+    .project__description--title {
+        font-size: 24px;
+    }
+    #landing-page {
+        min-height: 140vh;
+    }
+    .modal__language {
+        font-size: 12px;
+    }
+    .modal__exit {
+        font-size: 20px;
+    }
+    .form__submit {
+        font-size: 16px;
+        padding: 4px 8px;
     }
 }
