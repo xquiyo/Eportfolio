@@ -61,7 +61,7 @@ label {
 }
 .row {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -480,6 +480,17 @@ PROJECTS SECTION
     font-size: 48px;
     margin-bottom: 60px;
 }
+.project {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
 .project__img {
     width: 100%;
@@ -529,10 +540,11 @@ PROJECTS SECTION
 
 .project__wrapper {
     position: relative;
-    border-radius: 20px;
-    box-shadow: 0 20px 80px 0 rgb(0, 0 ,0, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0 ,0, 0.5);
     overflow: hidden;
-    margin-bottom: 80px;
+    max-width: 1280px;
+    margin-bottom: 24px;
 }
 
 
@@ -681,6 +693,9 @@ WIDTH = 80 Vw
     .title {
         font-size: 80px;
     }
+    .header {
+        text-align: center;
+    }
     .header__para {
         font-size: 20px;
     }
@@ -708,11 +723,20 @@ WIDTH = 80 Vw
 }
 
 @media (max-width: 480px) {
+    nav {
+        justify-content: center;
+    }
+    .mail__btn {
+        font-size: 24px;
+    }
     .title {
         font-size: 52px;
     }
+    .header {
+        text-align: left;
+    }
     .header__para {
-        font-size: 18px;
+        font-size: 12px;
     }
     .nav__link:first-child {
         display: none;
@@ -732,16 +756,13 @@ WIDTH = 80 Vw
     .modal__half {
         padding: 32px;
     }
-    .shape--3 {
-        top: 50vh;
-        left: 2vw;
-    }
-    .shape--5 {
-        top: 50vh;
-        left: 100vw;
-    }
-    .shape--1, .shape--7, .shape--4, .shape--0 {
+
+    .shape {
         visibility: hidden;
+        position: relative;
+    }
+    .section__title {
+        font-size: 28px;
     }
  
 }
@@ -750,14 +771,17 @@ WIDTH = 80 Vw
     .title {
         font-size: 40px;
     }
+    nav {
+        justify-content: center;
+    }
+    .nav__link--list {
+        font-size: 8px;
+    }
     .section__title {
         font-size: 24px;
     }
     .project__description--title {
         font-size: 24px;
-    }
-    #landing-page {
-        min-height: 140vh;
     }
     .modal__language {
         font-size: 12px;
